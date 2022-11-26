@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE98A293226520061992E /* IPRoyalApp.swift */; };
+		CD6DE98D293226520061992E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE98C293226520061992E /* ContentView.swift */; };
+		CD6DE98F293226530061992E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DE98E293226530061992E /* Assets.xcassets */; };
+		CD6DE992293226530061992E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DE991293226530061992E /* Preview Assets.xcassets */; };
+		CD6DE99C293226530061992E /* IPRoyalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE99B293226530061992E /* IPRoyalTests.swift */; };
+		CD6DE9A6293226530061992E /* IPRoyalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9A5293226530061992E /* IPRoyalUITests.swift */; };
+		CD6DE9A8293226530061992E /* IPRoyalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD6DE998293226530061992E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6DE97F293226520061992E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6DE986293226520061992E;
+			remoteInfo = IPRoyal;
+		};
+		CD6DE9A2293226530061992E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6DE97F293226520061992E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6DE986293226520061992E;
+			remoteInfo = IPRoyal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD6DE987293226520061992E /* IPRoyal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPRoyal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6DE98A293226520061992E /* IPRoyalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalApp.swift; sourceTree = "<group>"; };
+		CD6DE98C293226520061992E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD6DE98E293226530061992E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD6DE991293226530061992E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD6DE997293226530061992E /* IPRoyalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPRoyalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6DE99B293226530061992E /* IPRoyalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalTests.swift; sourceTree = "<group>"; };
+		CD6DE9A1293226530061992E /* IPRoyalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPRoyalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6DE9A5293226530061992E /* IPRoyalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalUITests.swift; sourceTree = "<group>"; };
+		CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD6DE984293226520061992E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6DE994293226530061992E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6DE99E293226530061992E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD6DE97E293226520061992E = {
+			isa = PBXGroup;
+			children = (
+				CD6DE989293226520061992E /* IPRoyal */,
+				CD6DE99A293226530061992E /* IPRoyalTests */,
+				CD6DE9A4293226530061992E /* IPRoyalUITests */,
+				CD6DE988293226520061992E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD6DE988293226520061992E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE987293226520061992E /* IPRoyal.app */,
+				CD6DE997293226530061992E /* IPRoyalTests.xctest */,
+				CD6DE9A1293226530061992E /* IPRoyalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD6DE989293226520061992E /* IPRoyal */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE98A293226520061992E /* IPRoyalApp.swift */,
+				CD6DE98C293226520061992E /* ContentView.swift */,
+				CD6DE98E293226530061992E /* Assets.xcassets */,
+				CD6DE990293226530061992E /* Preview Content */,
+			);
+			path = IPRoyal;
+			sourceTree = "<group>";
+		};
+		CD6DE990293226530061992E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE991293226530061992E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD6DE99A293226530061992E /* IPRoyalTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE99B293226530061992E /* IPRoyalTests.swift */,
+			);
+			path = IPRoyalTests;
+			sourceTree = "<group>";
+		};
+		CD6DE9A4293226530061992E /* IPRoyalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9A5293226530061992E /* IPRoyalUITests.swift */,
+				CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */,
+			);
+			path = IPRoyalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD6DE986293226520061992E /* IPRoyal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6DE9AB293226530061992E /* Build configuration list for PBXNativeTarget "IPRoyal" */;
+			buildPhases = (
+				CD6DE983293226520061992E /* Sources */,
+				CD6DE984293226520061992E /* Frameworks */,
+				CD6DE985293226520061992E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPRoyal;
+			productName = IPRoyal;
+			productReference = CD6DE987293226520061992E /* IPRoyal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD6DE996293226530061992E /* IPRoyalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6DE9AE293226530061992E /* Build configuration list for PBXNativeTarget "IPRoyalTests" */;
+			buildPhases = (
+				CD6DE993293226530061992E /* Sources */,
+				CD6DE994293226530061992E /* Frameworks */,
+				CD6DE995293226530061992E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6DE999293226530061992E /* PBXTargetDependency */,
+			);
+			name = IPRoyalTests;
+			productName = IPRoyalTests;
+			productReference = CD6DE997293226530061992E /* IPRoyalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD6DE9A0293226530061992E /* IPRoyalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6DE9B1293226530061992E /* Build configuration list for PBXNativeTarget "IPRoyalUITests" */;
+			buildPhases = (
+				CD6DE99D293226530061992E /* Sources */,
+				CD6DE99E293226530061992E /* Frameworks */,
+				CD6DE99F293226530061992E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6DE9A3293226530061992E /* PBXTargetDependency */,
+			);
+			name = IPRoyalUITests;
+			productName = IPRoyalUITests;
+			productReference = CD6DE9A1293226530061992E /* IPRoyalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD6DE97F293226520061992E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					CD6DE986293226520061992E = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					CD6DE996293226530061992E = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = CD6DE986293226520061992E;
+					};
+					CD6DE9A0293226530061992E = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = CD6DE986293226520061992E;
+					};
+				};
+			};
+			buildConfigurationList = CD6DE982293226520061992E /* Build configuration list for PBXProject "IPRoyal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD6DE97E293226520061992E;
+			productRefGroup = CD6DE988293226520061992E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD6DE986293226520061992E /* IPRoyal */,
+				CD6DE996293226530061992E /* IPRoyalTests */,
+				CD6DE9A0293226530061992E /* IPRoyalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD6DE985293226520061992E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6DE992293226530061992E /* Preview Assets.xcassets in Resources */,
+				CD6DE98F293226530061992E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6DE995293226530061992E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6DE99F293226530061992E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD6DE983293226520061992E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6DE98D293226520061992E /* ContentView.swift in Sources */,
+				CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6DE993293226530061992E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6DE99C293226530061992E /* IPRoyalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6DE99D293226530061992E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6DE9A6293226530061992E /* IPRoyalUITests.swift in Sources */,
+				CD6DE9A8293226530061992E /* IPRoyalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD6DE999293226530061992E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6DE986293226520061992E /* IPRoyal */;
+			targetProxy = CD6DE998293226530061992E /* PBXContainerItemProxy */;
+		};
+		CD6DE9A3293226530061992E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6DE986293226520061992E /* IPRoyal */;
+			targetProxy = CD6DE9A2293226530061992E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD6DE9A9293226530061992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD6DE9AA293226530061992E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD6DE9AC293226530061992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IPRoyal/Preview Content\"";
+				DEVELOPMENT_TEAM = K8852ZG89H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantas.IPRoyal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD6DE9AD293226530061992E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IPRoyal/Preview Content\"";
+				DEVELOPMENT_TEAM = K8852ZG89H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantas.IPRoyal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD6DE9AF293226530061992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8852ZG89H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantas.IPRoyalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPRoyal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IPRoyal";
+			};
+			name = Debug;
+		};
+		CD6DE9B0293226530061992E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8852ZG89H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantas.IPRoyalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPRoyal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IPRoyal";
+			};
+			name = Release;
+		};
+		CD6DE9B2293226530061992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8852ZG89H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantas.IPRoyalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IPRoyal;
+			};
+			name = Debug;
+		};
+		CD6DE9B3293226530061992E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8852ZG89H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantas.IPRoyalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IPRoyal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD6DE982293226520061992E /* Build configuration list for PBXProject "IPRoyal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6DE9A9293226530061992E /* Debug */,
+				CD6DE9AA293226530061992E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6DE9AB293226530061992E /* Build configuration list for PBXNativeTarget "IPRoyal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6DE9AC293226530061992E /* Debug */,
+				CD6DE9AD293226530061992E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6DE9AE293226530061992E /* Build configuration list for PBXNativeTarget "IPRoyalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6DE9AF293226530061992E /* Debug */,
+				CD6DE9B0293226530061992E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6DE9B1293226530061992E /* Build configuration list for PBXNativeTarget "IPRoyalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6DE9B2293226530061992E /* Debug */,
+				CD6DE9B3293226530061992E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD6DE97F293226520061992E /* Project object */;
+}
