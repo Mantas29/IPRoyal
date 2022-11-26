@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct IPRoyalApp: App {
+    
+    let coordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            AppCoordinatorView(coordinator: coordinator)
         }
     }
 }

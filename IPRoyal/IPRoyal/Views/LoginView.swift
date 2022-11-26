@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @ObservedObject var model = LoginViewModel()
+    @ObservedObject var model: LoginViewModel
     
     var body: some View {
         VStack(spacing: 14) {
@@ -26,11 +26,5 @@ struct LoginView: View {
             MainButton(action: model.login, title: "Login")
         }
         .padding()
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
     }
 }

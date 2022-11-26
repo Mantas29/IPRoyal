@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE98A293226520061992E /* IPRoyalApp.swift */; };
-		CD6DE98D293226520061992E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE98C293226520061992E /* ContentView.swift */; };
 		CD6DE98F293226530061992E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DE98E293226530061992E /* Assets.xcassets */; };
 		CD6DE992293226530061992E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DE991293226530061992E /* Preview Assets.xcassets */; };
 		CD6DE99C293226530061992E /* IPRoyalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE99B293226530061992E /* IPRoyalTests.swift */; };
@@ -20,6 +19,11 @@
 		CD6DE9BF29322BF30061992E /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9BE29322BF30061992E /* TextFields.swift */; };
 		CD6DE9C2293235580061992E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C1293235580061992E /* String.swift */; };
 		CD6DE9C42932368C0061992E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C32932368C0061992E /* Config.swift */; };
+		CD6DE9C729323C550061992E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C629323C550061992E /* AppCoordinator.swift */; };
+		CD6DE9C929323CC70061992E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C829323CC70061992E /* UserListViewModel.swift */; };
+		CD6DE9CC29323D0C0061992E /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CB29323D0C0061992E /* AppCoordinatorView.swift */; };
+		CD6DE9CE293240530061992E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CD293240530061992E /* View.swift */; };
+		CD6DE9D02932417F0061992E /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CF2932417F0061992E /* UserListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,6 @@
 /* Begin PBXFileReference section */
 		CD6DE987293226520061992E /* IPRoyal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPRoyal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DE98A293226520061992E /* IPRoyalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalApp.swift; sourceTree = "<group>"; };
-		CD6DE98C293226520061992E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD6DE98E293226530061992E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6DE991293226530061992E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD6DE997293226530061992E /* IPRoyalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPRoyalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +59,11 @@
 		CD6DE9BE29322BF30061992E /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		CD6DE9C1293235580061992E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CD6DE9C32932368C0061992E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CD6DE9C629323C550061992E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CD6DE9C829323CC70061992E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		CD6DE9CB29323D0C0061992E /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
+		CD6DE9CD293240530061992E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CD6DE9CF2932417F0061992E /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +114,13 @@
 		CD6DE989293226520061992E /* IPRoyal */ = {
 			isa = PBXGroup;
 			children = (
+				CD6DE9CA29323CFC0061992E /* CoordinatorViews */,
+				CD6DE9C529323C490061992E /* Coordinators */,
 				CD6DE9C02932354B0061992E /* Extensions */,
 				CD6DE9BB293228FD0061992E /* UIComponents */,
 				CD6DE9B72932283F0061992E /* ViewModels */,
 				CD6DE9B6293227420061992E /* Views */,
 				CD6DE98A293226520061992E /* IPRoyalApp.swift */,
-				CD6DE98C293226520061992E /* ContentView.swift */,
 				CD6DE98E293226530061992E /* Assets.xcassets */,
 				CD6DE990293226530061992E /* Preview Content */,
 				CD6DE9C32932368C0061992E /* Config.swift */,
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DE9B4293227320061992E /* LoginView.swift */,
+				CD6DE9CF2932417F0061992E /* UserListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DE9B82932284D0061992E /* LoginViewModel.swift */,
+				CD6DE9C829323CC70061992E /* UserListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,8 +184,25 @@
 			isa = PBXGroup;
 			children = (
 				CD6DE9C1293235580061992E /* String.swift */,
+				CD6DE9CD293240530061992E /* View.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD6DE9C529323C490061992E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9C629323C550061992E /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CD6DE9CA29323CFC0061992E /* CoordinatorViews */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9CB29323D0C0061992E /* AppCoordinatorView.swift */,
+			);
+			path = CoordinatorViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,11 +338,15 @@
 				CD6DE9BD2932290C0061992E /* Buttons.swift in Sources */,
 				CD6DE9B92932284D0061992E /* LoginViewModel.swift in Sources */,
 				CD6DE9B5293227320061992E /* LoginView.swift in Sources */,
-				CD6DE98D293226520061992E /* ContentView.swift in Sources */,
 				CD6DE9C2293235580061992E /* String.swift in Sources */,
+				CD6DE9C929323CC70061992E /* UserListViewModel.swift in Sources */,
+				CD6DE9C729323C550061992E /* AppCoordinator.swift in Sources */,
 				CD6DE9C42932368C0061992E /* Config.swift in Sources */,
+				CD6DE9D02932417F0061992E /* UserListView.swift in Sources */,
 				CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */,
 				CD6DE9BF29322BF30061992E /* TextFields.swift in Sources */,
+				CD6DE9CE293240530061992E /* View.swift in Sources */,
+				CD6DE9CC29323D0C0061992E /* AppCoordinatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

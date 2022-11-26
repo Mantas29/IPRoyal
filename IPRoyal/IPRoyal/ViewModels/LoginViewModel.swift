@@ -8,6 +8,10 @@
 import Combine
 import Foundation
 
+protocol AppCoordinatorProtocol: AnyObject {
+    func openUserList()
+}
+
 class LoginViewModel: ObservableObject {
     
     @Published var email = ""
@@ -18,7 +22,10 @@ class LoginViewModel: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = []
     
-    init() {
+    private unowned let coordinator: AppCoordinatorProtocol
+    
+    init(coordinator: AppCoordinatorProtocol) {
+        self.coordinator = coordinator
         setupObservers()
     }
     
@@ -29,7 +36,7 @@ class LoginViewModel: ObservableObject {
             return
         }
         
-        
+        coordinator.openUserList()
     }
     
     func setupObservers() {
