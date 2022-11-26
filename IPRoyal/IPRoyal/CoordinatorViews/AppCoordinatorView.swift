@@ -17,6 +17,7 @@ struct AppCoordinatorView: View {
             LoginView(model: coordinator.loginViewModel)
                 .navigation(item: $coordinator.userListViewModel) { model in
                     UserListView(model: model)
+                        .navigationBarHidden(true)
                 }
         }
     }

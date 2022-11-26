@@ -10,11 +10,11 @@ import Foundation
 class AppCoordinator: ObservableObject {
     
     lazy var loginViewModel = LoginViewModel(coordinator: self)
-    @Published var userListViewModel: UserListViewModel?
+    @Published var usersViewModel: UsersViewModel?
 }
 
 extension AppCoordinator: AppCoordinatorProtocol {
     func openUserList() {
-        userListViewModel = UserListViewModel()
+        usersViewModel = UsersViewModel()
     }
 }

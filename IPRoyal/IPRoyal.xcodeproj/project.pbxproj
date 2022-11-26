@@ -20,10 +20,13 @@
 		CD6DE9C2293235580061992E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C1293235580061992E /* String.swift */; };
 		CD6DE9C42932368C0061992E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C32932368C0061992E /* Config.swift */; };
 		CD6DE9C729323C550061992E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C629323C550061992E /* AppCoordinator.swift */; };
-		CD6DE9C929323CC70061992E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C829323CC70061992E /* UserListViewModel.swift */; };
+		CD6DE9C929323CC70061992E /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C829323CC70061992E /* UsersViewModel.swift */; };
 		CD6DE9CC29323D0C0061992E /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CB29323D0C0061992E /* AppCoordinatorView.swift */; };
 		CD6DE9CE293240530061992E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CD293240530061992E /* View.swift */; };
-		CD6DE9D02932417F0061992E /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CF2932417F0061992E /* UserListView.swift */; };
+		CD6DE9D02932417F0061992E /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9CF2932417F0061992E /* UsersView.swift */; };
+		CD6DE9D3293291100061992E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD6DE9D2293291100061992E /* Alamofire */; };
+		CD6DE9D62932914D0061992E /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9D52932914D0061992E /* UsersService.swift */; };
+		CD6DE9DA293292AA0061992E /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9D9293292AA0061992E /* UserDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +63,12 @@
 		CD6DE9C1293235580061992E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CD6DE9C32932368C0061992E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		CD6DE9C629323C550061992E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		CD6DE9C829323CC70061992E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		CD6DE9C829323CC70061992E /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		CD6DE9CB29323D0C0061992E /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
 		CD6DE9CD293240530061992E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		CD6DE9CF2932417F0061992E /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		CD6DE9CF2932417F0061992E /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		CD6DE9D52932914D0061992E /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		CD6DE9D9293292AA0061992E /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6DE9D3293291100061992E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +120,7 @@
 		CD6DE989293226520061992E /* IPRoyal */ = {
 			isa = PBXGroup;
 			children = (
+				CD6DE9D72932928F0061992E /* Networking */,
 				CD6DE9CA29323CFC0061992E /* CoordinatorViews */,
 				CD6DE9C529323C490061992E /* Coordinators */,
 				CD6DE9C02932354B0061992E /* Extensions */,
@@ -157,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DE9B4293227320061992E /* LoginView.swift */,
-				CD6DE9CF2932417F0061992E /* UserListView.swift */,
+				CD6DE9CF2932417F0061992E /* UsersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DE9B82932284D0061992E /* LoginViewModel.swift */,
-				CD6DE9C829323CC70061992E /* UserListViewModel.swift */,
+				CD6DE9C829323CC70061992E /* UsersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -205,6 +212,31 @@
 			path = CoordinatorViews;
 			sourceTree = "<group>";
 		};
+		CD6DE9D4293291170061992E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9D52932914D0061992E /* UsersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD6DE9D72932928F0061992E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9D82932929A0061992E /* DTO */,
+				CD6DE9D4293291170061992E /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD6DE9D82932929A0061992E /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9D9293292AA0061992E /* UserDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +253,9 @@
 			dependencies = (
 			);
 			name = IPRoyal;
+			packageProductDependencies = (
+				CD6DE9D2293291100061992E /* Alamofire */,
+			);
 			productName = IPRoyal;
 			productReference = CD6DE987293226520061992E /* IPRoyal.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +328,9 @@
 				Base,
 			);
 			mainGroup = CD6DE97E293226520061992E;
+			packageReferences = (
+				CD6DE9D1293291100061992E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CD6DE988293226520061992E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,15 +375,17 @@
 			files = (
 				CD6DE9BD2932290C0061992E /* Buttons.swift in Sources */,
 				CD6DE9B92932284D0061992E /* LoginViewModel.swift in Sources */,
+				CD6DE9D62932914D0061992E /* UsersService.swift in Sources */,
 				CD6DE9B5293227320061992E /* LoginView.swift in Sources */,
 				CD6DE9C2293235580061992E /* String.swift in Sources */,
-				CD6DE9C929323CC70061992E /* UserListViewModel.swift in Sources */,
+				CD6DE9C929323CC70061992E /* UsersViewModel.swift in Sources */,
 				CD6DE9C729323C550061992E /* AppCoordinator.swift in Sources */,
 				CD6DE9C42932368C0061992E /* Config.swift in Sources */,
-				CD6DE9D02932417F0061992E /* UserListView.swift in Sources */,
+				CD6DE9D02932417F0061992E /* UsersView.swift in Sources */,
 				CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */,
 				CD6DE9BF29322BF30061992E /* TextFields.swift in Sources */,
 				CD6DE9CE293240530061992E /* View.swift in Sources */,
+				CD6DE9DA293292AA0061992E /* UserDTO.swift in Sources */,
 				CD6DE9CC29323D0C0061992E /* AppCoordinatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD6DE9D1293291100061992E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD6DE9D2293291100061992E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD6DE9D1293291100061992E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD6DE97F293226520061992E /* Project object */;
 }
