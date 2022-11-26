@@ -18,6 +18,7 @@ struct User: Identifiable {
     let surname: String
     let email: String
     let address: String
+    let pictureURL: URL?
     
     init?(userResponse: UserResponse) {
         
@@ -29,6 +30,7 @@ struct User: Identifiable {
         surname = result.name.last
         email = result.email
         address = "\(result.location.street.name) \(result.location.street.name), \(result.location.city), \(result.location.country)"
+        pictureURL = URL(string: result.picture.large)
     }
     
     func contains(_ text: String) -> Bool {
@@ -52,6 +54,7 @@ struct UserResult: Decodable {
     let name: UserName
     let location: UserLocation
     let email: String
+    let picture: Picture
 }
 
 // MARK: - User Name
@@ -72,4 +75,10 @@ struct UserLocation: Decodable {
 struct UserStreet: Decodable {
     let number: Int
     let name: String
+}
+
+// MARK: - Picture
+
+struct Picture: Decodable {
+    let large: String
 }

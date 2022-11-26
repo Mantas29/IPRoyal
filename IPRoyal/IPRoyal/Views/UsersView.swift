@@ -80,15 +80,28 @@ private struct UserRowView: View {
     let user: User
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("\(user.name) \(user.surname)")
-                .fontWeight(.bold)
-            Text(user.email)
-            Text(user.address)
+        HStack {
+            profilePicture
+                .frame(width: 80, height: 80)
             
-            Divider()
+            VStack(alignment: .leading) {
+                Text("\(user.name) \(user.surname)")
+                    .fontWeight(.bold)
+                Text(user.email)
+                Text(user.address)
+                
+                Divider()
+            }
+            .multilineTextAlignment(.leading)
+            .font(.subheadline)
         }
-        .multilineTextAlignment(.leading)
-        .font(.subheadline)
+    }
+    
+    var profilePicture: some View {
+        AsyncImage(url: user.pictureURL) { image in
+            image.resizable()
+        } placeholder: {
+            ProgressView()
+        }
     }
 }
