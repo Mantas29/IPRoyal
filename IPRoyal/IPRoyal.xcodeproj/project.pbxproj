@@ -14,6 +14,12 @@
 		CD6DE99C293226530061992E /* IPRoyalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE99B293226530061992E /* IPRoyalTests.swift */; };
 		CD6DE9A6293226530061992E /* IPRoyalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9A5293226530061992E /* IPRoyalUITests.swift */; };
 		CD6DE9A8293226530061992E /* IPRoyalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */; };
+		CD6DE9B5293227320061992E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9B4293227320061992E /* LoginView.swift */; };
+		CD6DE9B92932284D0061992E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9B82932284D0061992E /* LoginViewModel.swift */; };
+		CD6DE9BD2932290C0061992E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9BC2932290C0061992E /* Buttons.swift */; };
+		CD6DE9BF29322BF30061992E /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9BE29322BF30061992E /* TextFields.swift */; };
+		CD6DE9C2293235580061992E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C1293235580061992E /* String.swift */; };
+		CD6DE9C42932368C0061992E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9C32932368C0061992E /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		CD6DE9A1293226530061992E /* IPRoyalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPRoyalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DE9A5293226530061992E /* IPRoyalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalUITests.swift; sourceTree = "<group>"; };
 		CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD6DE9B4293227320061992E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CD6DE9B82932284D0061992E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CD6DE9BC2932290C0061992E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		CD6DE9BE29322BF30061992E /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		CD6DE9C1293235580061992E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CD6DE9C32932368C0061992E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,15 @@
 		CD6DE989293226520061992E /* IPRoyal */ = {
 			isa = PBXGroup;
 			children = (
+				CD6DE9C02932354B0061992E /* Extensions */,
+				CD6DE9BB293228FD0061992E /* UIComponents */,
+				CD6DE9B72932283F0061992E /* ViewModels */,
+				CD6DE9B6293227420061992E /* Views */,
 				CD6DE98A293226520061992E /* IPRoyalApp.swift */,
 				CD6DE98C293226520061992E /* ContentView.swift */,
 				CD6DE98E293226530061992E /* Assets.xcassets */,
 				CD6DE990293226530061992E /* Preview Content */,
+				CD6DE9C32932368C0061992E /* Config.swift */,
 			);
 			path = IPRoyal;
 			sourceTree = "<group>";
@@ -125,6 +142,39 @@
 				CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */,
 			);
 			path = IPRoyalUITests;
+			sourceTree = "<group>";
+		};
+		CD6DE9B6293227420061992E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9B4293227320061992E /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD6DE9B72932283F0061992E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9B82932284D0061992E /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD6DE9BB293228FD0061992E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9BC2932290C0061992E /* Buttons.swift */,
+				CD6DE9BE29322BF30061992E /* TextFields.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		CD6DE9C02932354B0061992E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9C1293235580061992E /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6DE9BD2932290C0061992E /* Buttons.swift in Sources */,
+				CD6DE9B92932284D0061992E /* LoginViewModel.swift in Sources */,
+				CD6DE9B5293227320061992E /* LoginView.swift in Sources */,
 				CD6DE98D293226520061992E /* ContentView.swift in Sources */,
+				CD6DE9C2293235580061992E /* String.swift in Sources */,
+				CD6DE9C42932368C0061992E /* Config.swift in Sources */,
 				CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */,
+				CD6DE9BF29322BF30061992E /* TextFields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
