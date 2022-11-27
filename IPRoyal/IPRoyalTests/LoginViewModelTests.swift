@@ -27,11 +27,6 @@ final class LoginViewModelTests: XCTestCase {
         model = LoginViewModel(coordinator: coordinator)
     }
 
-    override func tearDownWithError() throws {
-        coordinator = Coordinator()
-        model = LoginViewModel(coordinator: coordinator)
-    }
-
     func testEmailState_valid() {
         XCTAssertEqual(model.emailState, .neutral)
         

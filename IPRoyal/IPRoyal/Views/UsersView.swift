@@ -67,7 +67,10 @@ private struct UserListView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(users) { user in
-                        UserRowView(user: user)
+                        VStack {
+                            UserRowView(user: user)
+                            Divider()
+                        }
                     }
                 }
             }
@@ -89,12 +92,11 @@ private struct UserRowView: View {
                     .fontWeight(.bold)
                 Text(user.email)
                 Text(user.address)
-                
-                Divider()
             }
             .multilineTextAlignment(.leading)
             .font(.subheadline)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     var profilePicture: some View {

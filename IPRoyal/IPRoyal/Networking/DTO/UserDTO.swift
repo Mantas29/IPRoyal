@@ -20,17 +20,12 @@ struct User: Identifiable {
     let address: String
     let pictureURL: URL?
     
-    init?(userResponse: UserResponse) {
-        
-        guard let result = userResponse.results.first else {
-            return nil
-        }
-        
-        name = result.name.first
-        surname = result.name.last
-        email = result.email
-        address = "\(result.location.street.name) \(result.location.street.name), \(result.location.city), \(result.location.country)"
-        pictureURL = URL(string: result.picture.large)
+    init(userResult: UserResult) {
+        name = userResult.name.first
+        surname = userResult.name.last
+        email = userResult.email
+        address = "\(userResult.location.street.name) \(userResult.location.street.name), \(userResult.location.city), \(userResult.location.country)"
+        pictureURL = URL(string: userResult.picture.large)
     }
     
     func contains(_ text: String) -> Bool {

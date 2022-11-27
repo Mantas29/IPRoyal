@@ -20,5 +20,6 @@ struct AppCoordinatorView: View {
                         .navigationBarHidden(true)
                 }
         }
+        .navigationViewStyle(.stack)
     }
 }

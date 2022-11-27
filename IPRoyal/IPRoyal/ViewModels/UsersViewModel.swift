@@ -57,7 +57,8 @@ class UsersViewModel: ObservableObject {
             for result in [r1, r2, r3] {
                 switch result {
                 case .success(let response):
-                    if let user = User(userResponse: response) {
+                    if let result = response.results.first {
+                        let user = User(userResult: result)
                         users.append(user)
                     } else {
                         self.state = .error("Could not retrieve all of the users")
