@@ -14,15 +14,18 @@ private enum Endpoints {
 }
 
 protocol UsersService {
-    func getRandomUsers() -> DataResponsePublisher<UserResponse>
+    func getRandomUsers() -> AnyPublisher<Result<UserResponse, ResponseError>, Never>
 }
 
 class DefaultUsersService: UsersService {
     
-    func getRandomUsers() -> DataResponsePublisher<UserResponse> {
+    func getRandomUsers() -> AnyPublisher<Result<UserResponse, ResponseError>, Never> {
         AF.request(Endpoints.randomUsersEndpoint,
                    method: .get)
         .validate()
         .publishDecodable(type: UserResponse.self)
+        .map { $0.result }
+        .map { $0.mapError(\.asResponseError) }
+        .eraseToAnyPublisher()
     }
 }

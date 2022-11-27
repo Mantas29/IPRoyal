@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 protocol AppCoordinatorProtocol: AnyObject {
-    func openUserList()
+    func openUsersView()
 }
 
 class LoginViewModel: ObservableObject {
@@ -36,10 +36,10 @@ class LoginViewModel: ObservableObject {
             return
         }
         
-        coordinator.openUserList()
+        coordinator.openUsersView()
     }
     
-    func setupObservers() {
+    private func setupObservers() {
         $email.sink { [weak self] _ in
             self?.emailState = .neutral
         }.store(in: &cancellables)
@@ -49,7 +49,7 @@ class LoginViewModel: ObservableObject {
         }.store(in: &cancellables)
     }
     
-    func validateUserInput() {
+    private func validateUserInput() {
         if email.isEmail {
             emailState = .neutral
         } else {

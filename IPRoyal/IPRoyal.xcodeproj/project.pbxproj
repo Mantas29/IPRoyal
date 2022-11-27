@@ -10,7 +10,6 @@
 		CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE98A293226520061992E /* IPRoyalApp.swift */; };
 		CD6DE98F293226530061992E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DE98E293226530061992E /* Assets.xcassets */; };
 		CD6DE992293226530061992E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DE991293226530061992E /* Preview Assets.xcassets */; };
-		CD6DE99C293226530061992E /* IPRoyalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE99B293226530061992E /* IPRoyalTests.swift */; };
 		CD6DE9A6293226530061992E /* IPRoyalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9A5293226530061992E /* IPRoyalUITests.swift */; };
 		CD6DE9A8293226530061992E /* IPRoyalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */; };
 		CD6DE9B5293227320061992E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9B4293227320061992E /* LoginView.swift */; };
@@ -27,6 +26,10 @@
 		CD6DE9D3293291100061992E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD6DE9D2293291100061992E /* Alamofire */; };
 		CD6DE9D62932914D0061992E /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9D52932914D0061992E /* UsersService.swift */; };
 		CD6DE9DA293292AA0061992E /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9D9293292AA0061992E /* UserDTO.swift */; };
+		CD6DE9DC2932C8C00061992E /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9DB2932C8C00061992E /* LoginViewModelTests.swift */; };
+		CD6DE9DE2932D48B0061992E /* UsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9DD2932D48B0061992E /* UsersViewModelTests.swift */; };
+		CD6DE9E22932F1C90061992E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9E12932F1C90061992E /* AFError.swift */; };
+		CD6DE9E52932F1F90061992E /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DE9E42932F1F90061992E /* ResponseError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,6 @@
 		CD6DE98E293226530061992E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6DE991293226530061992E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD6DE997293226530061992E /* IPRoyalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPRoyalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD6DE99B293226530061992E /* IPRoyalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalTests.swift; sourceTree = "<group>"; };
 		CD6DE9A1293226530061992E /* IPRoyalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPRoyalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DE9A5293226530061992E /* IPRoyalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalUITests.swift; sourceTree = "<group>"; };
 		CD6DE9A7293226530061992E /* IPRoyalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPRoyalUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -69,6 +71,10 @@
 		CD6DE9CF2932417F0061992E /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		CD6DE9D52932914D0061992E /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		CD6DE9D9293292AA0061992E /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		CD6DE9DB2932C8C00061992E /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		CD6DE9DD2932D48B0061992E /* UsersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelTests.swift; sourceTree = "<group>"; };
+		CD6DE9E12932F1C90061992E /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		CD6DE9E42932F1F90061992E /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +152,8 @@
 		CD6DE99A293226530061992E /* IPRoyalTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD6DE99B293226530061992E /* IPRoyalTests.swift */,
+				CD6DE9DB2932C8C00061992E /* LoginViewModelTests.swift */,
+				CD6DE9DD2932D48B0061992E /* UsersViewModelTests.swift */,
 			);
 			path = IPRoyalTests;
 			sourceTree = "<group>";
@@ -223,6 +230,7 @@
 		CD6DE9D72932928F0061992E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CD6DE9DF2932F1B20061992E /* Helpers */,
 				CD6DE9D82932929A0061992E /* DTO */,
 				CD6DE9D4293291170061992E /* Services */,
 			);
@@ -235,6 +243,31 @@
 				CD6DE9D9293292AA0061992E /* UserDTO.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		CD6DE9DF2932F1B20061992E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9E32932F1EF0061992E /* Errors */,
+				CD6DE9E02932F1C00061992E /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CD6DE9E02932F1C00061992E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9E12932F1C90061992E /* AFError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD6DE9E32932F1EF0061992E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DE9E42932F1F90061992E /* ResponseError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +413,8 @@
 				CD6DE9C2293235580061992E /* String.swift in Sources */,
 				CD6DE9C929323CC70061992E /* UsersViewModel.swift in Sources */,
 				CD6DE9C729323C550061992E /* AppCoordinator.swift in Sources */,
+				CD6DE9E52932F1F90061992E /* ResponseError.swift in Sources */,
+				CD6DE9E22932F1C90061992E /* AFError.swift in Sources */,
 				CD6DE9C42932368C0061992E /* Config.swift in Sources */,
 				CD6DE9D02932417F0061992E /* UsersView.swift in Sources */,
 				CD6DE98B293226520061992E /* IPRoyalApp.swift in Sources */,
@@ -394,7 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD6DE99C293226530061992E /* IPRoyalTests.swift in Sources */,
+				CD6DE9DC2932C8C00061992E /* LoginViewModelTests.swift in Sources */,
+				CD6DE9DE2932D48B0061992E /* UsersViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

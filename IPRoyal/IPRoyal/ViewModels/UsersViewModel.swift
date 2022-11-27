@@ -14,6 +14,16 @@ class UsersViewModel: ObservableObject {
         case loading
         case finished([User])
         case error(String)
+        
+        var isFinished: Bool {
+            if case .finished = self { return true }
+            return false
+        }
+        
+        var isError: Bool {
+            if case .error = self { return true }
+            return false
+        }
     }
     
     let userService: UsersService
@@ -30,6 +40,8 @@ class UsersViewModel: ObservableObject {
         get3RandomUsers()
     }
     
+    // This is a simplified approach that takes advantage of built in Zip3 Combine method.
+    // In order to have scalability, a solution with unlimited requests should be implemented.
     func get3RandomUsers() {
         
         state = .loading
@@ -38,12 +50,12 @@ class UsersViewModel: ObservableObject {
         
         usersObserver = Publishers.Zip3(userService.getRandomUsers(),
                                         userService.getRandomUsers(),
-                                        userService.getRandomUsers()).sink { [weak self] (p1, p2, p3) in
+                                        userService.getRandomUsers()).sink { [weak self] (r1, r2, r3) in
             
             guard let self else { return }
             
-            [p1, p2, p3].forEach { response in
-                switch response.result {
+            for result in [r1, r2, r3] {
+                switch result {
                 case .success(let response):
                     if let user = User(userResponse: response) {
                         users.append(user)
@@ -53,6 +65,7 @@ class UsersViewModel: ObservableObject {
                     }
                 case .failure(let error):
                     self.state = .error(error.localizedDescription)
+                    return
                 }
             }
             

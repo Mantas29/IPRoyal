@@ -14,7 +14,7 @@ class AppCoordinator: ObservableObject {
 }
 
 extension AppCoordinator: AppCoordinatorProtocol {
-    func openUserList() {
+    func openUsersView() {
         usersViewModel = UsersViewModel()
     }
 }
